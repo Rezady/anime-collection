@@ -1,8 +1,8 @@
 import { useQuery } from "@apollo/client"
-import { GET_ANIME_DETAIL, GET_COLLECTION } from "../../helpers/query/anime"
+import { GET_ANIME_DETAIL } from "../../helpers/query/anime"
 import { useParams } from "react-router-dom"
 import { useUserContext } from "../../context/UserContext"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { ButtonAdd, ContainerDetail, TitleAnime } from "./styles"
 import Loader from "../../components/loader"
 import AddCollection from "../../components/modal/AddCollection"
@@ -15,10 +15,6 @@ const AnimeDetail = () => {
 	const {data, loading} = useQuery(GET_ANIME_DETAIL, {
 		variables:{id: params.id},
 		onCompleted: (data) => saveUser({...user, banner: data?.Media.bannerImage})
-	})
-
-	const {data: collectionData} = useQuery(GET_COLLECTION, {
-		variables: {userId: 5813837}
 	})
 	
 	if(loading) return <Loader />

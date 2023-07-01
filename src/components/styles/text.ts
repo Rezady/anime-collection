@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import { TextProps } from './types'
 
 export const Text = styled.p(
     {

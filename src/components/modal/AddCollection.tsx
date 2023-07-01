@@ -4,8 +4,6 @@ import { useUserContext } from "../../context/UserContext"
 import { Column, Row } from "../styles/layout"
 import { CoverImage } from "./styles"
 import { H3, Text } from "../styles/text"
-import { useNavigate } from "react-router-dom"
-import { STATUS } from "../../helpers/constants/anime"
 import { InputTypes, PropsAddCollection } from "./types"
 
 const score = [1,2,3,4,5]

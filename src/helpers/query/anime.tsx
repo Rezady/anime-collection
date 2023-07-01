@@ -44,13 +44,3 @@ query ($id: Int) {
 		}
 	}
 }`
-
-export const GET_COLLECTION = gql`
-	query($userId: Int) {
-		MediaListCollection(userId: $userId, type: ANIME) {
-			lists {
-				name
-			}
-		}
-	}
-`

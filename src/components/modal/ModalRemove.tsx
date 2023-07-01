@@ -1,5 +1,5 @@
 import { Button, ContainerModal, Modal } from './styles'
-import {  H3, Text } from '../styles/text'
+import {  H3 } from '../styles/text'
 import { Column, Row } from '../styles/layout'
 import { FC } from 'react'
 import { PropsModalRemove } from './types'

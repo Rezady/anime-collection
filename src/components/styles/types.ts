@@ -12,11 +12,3 @@ export interface RowProps {
     alignSelf?: string
     justifySelf?: string
 }
-
-export interface TextProps {
-    margin?: number | string 
-    size?: number | string 
-    weight?: number
-    color?: string
-    link?: boolean
-}
